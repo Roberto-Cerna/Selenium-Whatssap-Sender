@@ -70,8 +70,8 @@ def main(start, stop, filename, tlf_col, check_col, sheet):
             element_presence( By.XPATH,'//div[@title="Escribe un mensaje aquí"]', 30, driver)
             txt_box = driver.find_element( By.XPATH, '//div[@title="Escribe un mensaje aquí"]')
             image_box = driver.find_element( By.XPATH,"//span[@data-testid='clip']")
-            message = """Estimado Empresario Bodeguero 😃
-Te enviamos una guía donde se explica como completar el formulario de registro.
+            message = """Ejemplo mensaje 😃
+multilínea.
 """
             send_text_message(message, driver, txt_box)
             send_image_message("Pasos de ingreso.png",driver, image_box,root)
@@ -86,5 +86,5 @@ Te enviamos una guía donde se explica como completar el formulario de registro.
     data[tlf_col] = data[tlf_col] - 51*(10**9)
     data.to_excel(f"{root}\data\{filename}", sheet_name = sheet, index = False)
 if __name__ == "__main__":
-
-    main(0, 3, "BD Bodega Maestra Base para envios.xlsx", "Teléfono","new_check", "BD envio")
+    excel_file = "example.xlsx"
+    main(0, 3,excel_file, "Teléfono","new_check", "sheet1")
