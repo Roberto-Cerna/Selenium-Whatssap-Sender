@@ -3,9 +3,10 @@ Python script for sending whatssap text and images messages from an xlsx file wi
 Currently works with chrome version 104.0.5112.81 and chromedriver 104.0.5112.79
 # Usage
 
-> Download chromedriver (https://chromedriver.chromium.org/downloads) version for your chrome version
+<ol>
+<li> Download chromedriver (https://chromedriver.chromium.org/downloads) version for your chrome version. </li>
 
-> Create Directory Structure:
+<li> Create Directory Structure: </li>
 <pre>
 -ParDir
   -Data
@@ -16,9 +17,9 @@ Currently works with chrome version 104.0.5112.81 and chromedriver 104.0.5112.79
   chromedriver.exe
 </pre>
 
-> Execute script
+<li> Execute script </li>
 
-
+</ol>
 
 
 # Dependencies
